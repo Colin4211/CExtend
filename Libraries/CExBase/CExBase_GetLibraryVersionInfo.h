@@ -1,0 +1,38 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+//  CExtend Libraries
+//  Copyright (c) 1999, Colin Goodall
+//      This software is licensed under the MIT License.
+//      See the LICENSE file for details.
+//
+/////////////////////////////////////////////////////////////////////////////
+//
+//  Module:
+//      CExBase
+//
+//  File:
+//      CExtend\Libraries\CExBase\CExBase_GetLibraryVersionInfo.h
+//
+//  DocTool Settings:
+//      <DT_SUB_TOPIC> .
+//      <DT_SUB_TOPIC> Libs
+//      <DT_SUB_TOPIC> CExBase
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef _CExBase_GetCExtendVersion_h
+#define _CExBase_GetCExtendVersion_h
+
+namespace CExBase
+{
+
+/////////////////////////////////////////////////////////////////////////////
+
+bool  GetLibraryVersionInfo( CExBase_VersionInfo * ptrVersionInfo );
+
+/////////////////////////////////////////////////////////////////////////////
+
+}; // namespace CExBase
+
+#endif // _CExBase_GetCExtendVersion_h
+

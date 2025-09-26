@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="CExBase" ProjectGUID="{FE186E83-D6F0-404E-9213-24021D5117AA}" RootNamespace="CExBase" Keyword="Win32Proj" TargetFrameworkVersion="196613">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration Name="Debug|Win32" OutputDirectory="Win32_Debug" IntermediateDirectory="Win32_Debug" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="4">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="" PreprocessorDefinitions="CEXTEND_DEBUG;WIN32;_DEBUG;_LIB" MinimalRebuild="false" BasicRuntimeChecks="3" RuntimeLibrary="1" UsePrecompiledHeader="2" PrecompiledHeaderThrough="CExBase.h" PrecompiledHeaderFile="Win32_Debug\CExBase_Win32_d.pch" WarningLevel="3" DebugInformationFormat="3" ProgramDataBaseFileName="Win32_Debug\CExBase_Win32_d.pdb"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLibrarianTool" OutputFile="Win32_Debug\CExBase_Win32_d.lib"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" OutputDirectory="Win64_Debug" IntermediateDirectory="Win64_Debug" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="4">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool" TargetEnvironment="3"/>
+			<Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="" PreprocessorDefinitions="CEXTEND_DEBUG;WIN32;_DEBUG;_LIB" MinimalRebuild="false" BasicRuntimeChecks="3" RuntimeLibrary="1" UsePrecompiledHeader="2" PrecompiledHeaderThrough="CExBase.h" PrecompiledHeaderFile="Win64_Debug\CExBase_Win64_d.pch" WarningLevel="3" DebugInformationFormat="3" ProgramDataBaseFileName="Win64_Debug\CExBase_Win64_d.pdb"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLibrarianTool" OutputFile="Win64_Debug\CExBase_Win64_d.lib"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" OutputDirectory="Win32_Release" IntermediateDirectory="Win32_Release" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="4">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" AdditionalIncludeDirectories="" PreprocessorDefinitions="CEXTEND_RELEASE;NDEBUG;WIN32;_LIB;_RELEASE" MinimalRebuild="false" RuntimeLibrary="0" EnableFunctionLevelLinking="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="CExBase.h" PrecompiledHeaderFile="Win32_Release\CExBase_Win32.pch" WarningLevel="3" DebugInformationFormat="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLibrarianTool" OutputFile="Win32_Release\CExBase_Win32.lib"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Release|x64" OutputDirectory="Win64_Release" IntermediateDirectory="Win64_Release" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="4">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool" TargetEnvironment="3"/>
+			<Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" AdditionalIncludeDirectories="" PreprocessorDefinitions="CEXTEND_RELEASE;NDEBUG;WIN32;_LIB;_RELEASE" MinimalRebuild="false" RuntimeLibrary="0" EnableFunctionLevelLinking="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="CExBase.h" PrecompiledHeaderFile="Win64_Release\CExBase_Win64.pch" WarningLevel="3" DebugInformationFormat="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLibrarianTool" OutputFile="Win64_Release\CExBase_Win64.lib"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter Name="Source Files" Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File RelativePath="CExBase.cpp">
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|x64">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release|x64">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="CExBase_GetCExtendVersionInfo.cpp">
+			</File>
+			<File RelativePath="Private_CExBase_VersionStruct.cpp">
+			</File>
+		</Filter>
+		<Filter Name="Header Files" Filter="h;hpp;hxx;hm;inl;inc;xsd" UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File RelativePath=".\CExBase.h">
+			</File>
+			<File RelativePath=".\CExBase_DequeTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_GetCExtendVersionInfo.h">
+			</File>
+			<File RelativePath=".\CExBase_Linux.h">
+			</File>
+			<File RelativePath=".\CExBase_ListTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_MapTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_MSWindows.h">
+			</File>
+			<File RelativePath=".\CExBase_Platform.h">
+			</File>
+			<File RelativePath=".\CExBase_SetTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_SizedTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_StdC.h">
+			</File>
+			<File RelativePath=".\CExBase_StdCPP.h">
+			</File>
+			<File RelativePath=".\CExBase_VectorTypes.h">
+			</File>
+			<File RelativePath=".\CExBase_VersionInfo.h">
+			</File>
+			<File RelativePath=".\CExBase_VersionNumber.h">
+			</File>
+			<File RelativePath=".\CExBase_WideChar.h">
+			</File>
+			<File RelativePath=".\Private_CExBase_VersionStruct.h">
+			</File>
+		</Filter>
+		<Filter Name="Misc">
+			<File RelativePath=".\CT_ProjectConfig.ini">
+			</File>
+		</Filter>
+		<Filter Name="Autoset_BuildLogs">
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Win32.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Win32.Release.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Win64.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Win64.Release.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Generic.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.Generic.Release.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxARM.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxARM.Release.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxI32.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxI32.Release.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxI64.Debug.log">
+			</File>
+			<File RelativePath="..\..\Output\BuildLogs\CExtendDev_Libs_CExBase.LinuxI64.Release.log">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

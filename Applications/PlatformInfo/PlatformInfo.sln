@@ -2,11 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlatformInfo", "PlatformInfo.vcproj", "{9B5540C5-C410-4CBD-84CC-B928553F91C9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{FE186E83-D6F0-404E-9213-24021D5117AA} = {FE186E83-D6F0-404E-9213-24021D5117AA}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CExBase", "..\..\Libs\CExBase\CExBase.vcproj", "{FE186E83-D6F0-404E-9213-24021D5117AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,14 +19,6 @@ Global
 		{9B5540C5-C410-4CBD-84CC-B928553F91C9}.Release|Win32.Build.0 = Release|Win32
 		{9B5540C5-C410-4CBD-84CC-B928553F91C9}.Release|x64.ActiveCfg = Release|x64
 		{9B5540C5-C410-4CBD-84CC-B928553F91C9}.Release|x64.Build.0 = Release|x64
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Debug|Win32.Build.0 = Debug|Win32
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Debug|x64.ActiveCfg = Debug|x64
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Debug|x64.Build.0 = Debug|x64
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Release|Win32.ActiveCfg = Release|Win32
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Release|Win32.Build.0 = Release|Win32
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Release|x64.ActiveCfg = Release|x64
-		{FE186E83-D6F0-404E-9213-24021D5117AA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

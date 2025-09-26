@@ -28,7 +28,7 @@ long_line_behaviour=1
 long_line_column=78
 
 [files]
-current_page=4
+current_page=1
 FILE_NAME_0=0;Conf;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2FCT_ProjectConfig.MakeCfg;0;4
 FILE_NAME_1=298;Conf;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2FCT_ProjectConfig.ini;0;4
 FILE_NAME_2=1112;Sh;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2FDoBuild.sh;0;4
@@ -44,8 +44,6 @@ FILE_NAME_11=3560;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCEx
 FILE_NAME_12=391;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2Fprecomp.cpp;0;4
 FILE_NAME_13=391;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2Fprecomp.h;0;4
 FILE_NAME_14=391;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FApplications%2FPlatformInfo%2Fresource.h;0;4
-FILE_NAME_15=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Applications_PlatformInfo.LinuxI64.Debug.log;0;4
-FILE_NAME_16=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Applications_PlatformInfo.LinuxI64.Release.log;0;4
 
 [VTE]
-last_dir=/Mount/Development/NextGen/CExtend/Applications/PlatformInfo
+last_dir=/Mount/Development/NextGen/CExtendDex/Apps/DevUtil

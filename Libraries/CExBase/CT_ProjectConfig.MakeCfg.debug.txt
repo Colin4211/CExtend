@@ -1,0 +1,217 @@
+;  CTools Make Config File
+;  Save Filename = /Mount/Development/NextGen/CExtend/Libraries/CExBase/CT_ProjectConfig.MakeCfg.debug.txt
+;  Orig Filename = /Mount/Development/NextGen/CExtend/Libraries/CExBase/CT_ProjectConfig.MakeCfg
+; -------------------------------------------------------------
+; Comments start with ';' 
+; Preprocess line starts with '@' 
+; Sections start with '!' followed by name of section.
+;   Each new section represents a different target platform.
+;   The reserved section comment applies to all platforms.
+; Line Continuation: If the last character on line is \ then
+;  it is merged with the next line before processing.
+; Variables are used with the format $[name]
+; Variables are defined in the format varname|target = value 
+;  Where target is Debug or Releast
+; -------------------------------------------------------------
+; @CLEAR PLATFORM
+;   Clears all definitions associated with the stated platform.
+; @DELETE PLATFORM
+;   Deletes all definitions associated with the stated platform.
+; @INCLUDE FILENAME
+;   Process the stated file before continuing with current file.
+; -------------------------------------------------------------
+; Variable Definitions
+; COMMAND_COMPILE_C = Full command to compile C file. 
+; COMMAND_COMPILE_CPP = Full command to compile C++ file. 
+; COMMAND_DEPENDS_C = Full command to compile dependancy file for C file. 
+; COMMAND_DEPENDS_CPP = Full command to compile dependancy file for C++ file. 
+; COMMAND_LINK_APP = Full command to link application. 
+; COMMAND_LINK_LIB = Full command to link library (.lib file). 
+; COMMAND_LINK_MODULE = Full command to link module (.so file). 
+; COMMAND_PRECOMP_C = Full command to compile C precompiled gch file. 
+; COMMAND_PRECOMP_CPP = Full command to compile C++ precompiled gch file. 
+; COMPILE_C_DEFINES = C Compilation defines. 
+; COMPILE_C_OPTIONS = Combination of COMPILE_C_OPTIONS_COMMON and COMPILE_C_OPTIONS_TARGET. 
+; COMPILE_C_OPTIONS_COMMON = C compile options for both debug and release. 
+; COMPILE_C_OPTIONS_DEBUG = C compile options specific to debug. 
+; COMPILE_C_OPTIONS_RELEASE = C compile options specific to release. 
+; COMPILE_CPP_DEFINES = CPP Compilation defines. 
+; COMPILE_CPP_OPTIONS = Combination of COMPILE_CPP_OPTIONS_COMMON and COMPILE_CPP_OPTIONS_TARGET. 
+; COMPILE_CPP_OPTIONS_COMMON = C++ compile options for both debug and release. 
+; COMPILE_CPP_OPTIONS_DEBUG = C++ compile options specific to debug. 
+; COMPILE_CPP_OPTIONS_RELEASE = C++ compile options specific to release. 
+; DEPENDS_FILE = The name of the generated depends file. 
+; DEPENDS_FILE_TARGET = The name of the target rule in a generated depends file. 
+; DisableTarget = Used to enable-disable a target platform. 
+; GCC_MULTIARCH = List of acceptable strings used for platform determination for each platform. 
+; INCLUDE_DIRS = The additional include directories. 
+; LINK_APP_OPTIONS = Extra options for the Link App command. 
+; LINK_DIRS = Directories to be searched for lib files. 
+; LINK_LIB_FILES = List of lib files to be included in link command. 
+; LINK_LIB_NAMES = Name of standard libraries to include in link. 
+; LINK_LIB_OPTIONS = Extra options for the Link Lib command. 
+; LINK_MODULE_OPTIONS = Extra options for the Link Module command. 
+; LINK_SO_DIRS = Dirs to search for .so files. 
+; LINK_SO_NAME = Option used when linking to SO files. 
+; LINK_SO_NAMES = Names of .so files to link to. 
+; LINK_SO_PATH = Option used when linking to SO files. 
+; LINK_VERSION_SCRIPT = The arg to append to start of version script name 
+; LINK_VERSION_SCRIPT_ARG = The arg to append to start of version script name 
+; LINK_VERSION_SCRIPT_NAME = The name of the version script. 
+; OBJECT_FILE = The name of the output object file. 
+; OBJECT_FILE_LIST = List of object files to be included in link command. 
+; OUTPUT_FILE = The name of the final output file (link step). 
+; PlatformType_ARG = The compiler option used to specify a specific architecture. 
+; PRECOMP_EXCLUDE = The names of the source files that do not use precompiled headers. 
+; PRECOMP_HEADER = The name of the header file that is the precompiled header. 
+; PRECOMP_INCLUDE_FILE = The precomp header file to include at start of compilation. 
+; PRECOMP_SOURCE = The name of the source file used to generate the precompiled header. 
+; PROJECT_TYPE = The type of project being compiled (app,module,lib). 
+; RPATH_DOT = Option used when linking to SO files. 
+; RPATH_DOT_OPTION = Option used when linking to SO files. 
+; SOURCE_FILE = The name of the source file to compile. 
+; SOURCE_FILES = The list of source files to include in the project. 
+; SOURCE_FILES_EXCLUDE = The list of source files to excluded from the project. 
+; TOOL_COMPILE_C = Name of tool to compile .c source files. 
+; TOOL_COMPILE_CPP = Name of tool to compile .cpp source files. 
+; TOOL_LINK_APP = Name of tool to link applications. 
+; TOOL_LINK_LIB = Name of tool to link libraries (.lib files). 
+; TOOL_LINK_MODULE = Name of tool to link modules (.so files). 
+; -------------------------------------------------------------
+
+
+; -------------------------------------------------------------
+!Common
+
+COMMAND_COMPILE_C = $[TOOL_COMPILE_C] -x c $[PlatformType_ARG]  \
+        $[COMPILE_C_OPTIONS] $[COMPILE_C_DEFINES] $[PRECOMP_INCLUDE_FILE]  \
+        $[INCLUDE_DIRS] -c $[SOURCE_FILE] -o $[OBJECT_FILE] 
+
+COMMAND_COMPILE_CPP = $[TOOL_COMPILE_CPP] -x c++ $[PlatformType_ARG]  \
+        $[COMPILE_CPP_OPTIONS] $[COMPILE_CPP_DEFINES]  \
+        $[PRECOMP_INCLUDE_FILE] $[INCLUDE_DIRS] -c $[SOURCE_FILE] -o  \
+        $[OBJECT_FILE] 
+
+COMMAND_DEPENDS_C = $[TOOL_COMPILE_C] -x c $[PlatformType_ARG]  \
+        $[COMPILE_C_OPTIONS] $[COMPILE_C_DEFINES] $[PRECOMP_INCLUDE_FILE]  \
+        $[INCLUDE_DIRS] -MM $[SOURCE_FILE] -MT $[OBJECT_FILE] -o  \
+        $[DEPENDS_FILE] 
+
+COMMAND_DEPENDS_CPP = $[TOOL_COMPILE_CPP] -x c++ $[PlatformType_ARG]  \
+        $[COMPILE_CPP_OPTIONS] $[COMPILE_CPP_DEFINES]  \
+        $[PRECOMP_INCLUDE_FILE] $[INCLUDE_DIRS] -MM $[SOURCE_FILE] -MT  \
+        $[OBJECT_FILE] -o $[DEPENDS_FILE] 
+
+COMMAND_LINK_APP = $[TOOL_LINK_APP] $[PlatformType_ARG] -o $[OUTPUT_FILE]  \
+        $[LINK_APP_OPTIONS] $[RPATH_DOT_OPTION] $[LINK_SO_DIRS]  \
+        -Wl,--start-group $[OBJECT_FILE_LIST] $[LINK_LIB_FILES]  \
+        $[LINK_SO_NAMES] -Wl,--end-group $[LINK_DIRS] $[LINK_LIB_NAMES] 
+
+COMMAND_LINK_LIB = $[TOOL_LINK_LIB] rcs $[OUTPUT_FILE] $[LINK_LIB_OPTIONS]  \
+        $[OBJECT_FILE_LIST] 
+
+COMMAND_LINK_MODULE = $[TOOL_LINK_MODULE] $[PlatformType_ARG] -shared -o  \
+        $[OUTPUT_FILE] $[LINK_MODULE_OPTIONS] $[RPATH_DOT_OPTION]  \
+        $[LINK_SO_DIRS] -Wl,--whole-archive -Wl,--start-group  \
+        $[OBJECT_FILE_LIST] $[LINK_LIB_FILES] $[LINK_SO_NAMES]  \
+        -Wl,--end-group $[LINK_DIRS] $[LINK_LIB_NAMES]  \
+        -Wl,--no-whole-archive -fvisibility=hidden $[LINK_VERSION_SCRIPT] 
+
+COMMAND_PRECOMP_C = $[TOOL_COMPILE_C] -x c-header $[PlatformType_ARG]  \
+        $[COMPILE_C_OPTIONS] $[COMPILE_C_DEFINES] $[INCLUDE_DIRS] -c  \
+        $[SOURCE_FILE] -o $[OBJECT_FILE] 
+
+COMMAND_PRECOMP_CPP = $[TOOL_COMPILE_CPP] -x c++-header $[PlatformType_ARG]  \
+        $[COMPILE_CPP_OPTIONS] $[COMPILE_CPP_DEFINES] $[INCLUDE_DIRS] -c  \
+        $[SOURCE_FILE] -o $[OBJECT_FILE] 
+
+COMPILE_C_OPTIONS_COMMON = -fPIC -fmessage-length=0 -Wall -Wextra  \
+        -Wno-type-limits 
+
+COMPILE_CPP_OPTIONS_COMMON = -fPIC -fmessage-length=0 -Wall -Wextra  \
+        -Wno-type-limits 
+
+LINK_LIB_NAMES = -lrt -ldl -lpthread 
+
+LINK_SO_NAME = -Wl,-l: 
+
+LINK_SO_PATH = -Wl,-L 
+
+LINK_VERSION_SCRIPT_ARG = -Wl,--version-script= 
+
+RPATH_DOT = -Wl,-rpath,. 
+
+SOURCE_FILES = <CT_PROJECT_CONFIG_SOURCE_FILES> <VCPROJ_SOURCE_FILES> 
+
+SOURCE_FILES_EXCLUDE = <CT_PROJECT_CONFIG_EXCLUDE_FILES>  \
+        <VCPROJ_EXCLUDE_FILES> 
+
+TOOL_COMPILE_C = gcc 
+
+TOOL_COMPILE_CPP = g++ 
+
+TOOL_LINK_APP = g++ 
+
+TOOL_LINK_LIB = ar 
+
+TOOL_LINK_MODULE = g++ 
+
+COMPILE_C_OPTIONS|Debug = $[COMPILE_C_OPTIONS_COMMON]  \
+        $[COMPILE_C_OPTIONS_DEBUG] 
+
+COMPILE_C_OPTIONS_DEBUG|Debug = -O0 -ggdb3 
+
+COMPILE_CPP_OPTIONS|Debug = $[COMPILE_CPP_OPTIONS_COMMON]  \
+        $[COMPILE_CPP_OPTIONS_DEBUG] 
+
+COMPILE_CPP_OPTIONS_DEBUG|Debug = -O0 -ggdb3 
+
+COMPILE_C_OPTIONS|Release = $[COMPILE_C_OPTIONS_COMMON]  \
+        $[COMPILE_C_OPTIONS_RELEASE] 
+
+COMPILE_C_OPTIONS_RELEASE|Release = -O2 -g0 -Wstrict-overflow=0 
+
+COMPILE_CPP_OPTIONS|Release = $[COMPILE_CPP_OPTIONS_COMMON]  \
+        $[COMPILE_CPP_OPTIONS_RELEASE] 
+
+COMPILE_CPP_OPTIONS_RELEASE|Release = -O2 -g0 -Wstrict-overflow=0 
+
+
+
+; -------------------------------------------------------------
+!Generic
+
+PlatformType_ARG = 
+
+
+
+; -------------------------------------------------------------
+!LinuxARM
+
+GCC_MULTIARCH = arm-linux-gnueabihf 
+
+PlatformType_ARG = -marm 
+
+
+
+; -------------------------------------------------------------
+!LinuxI32
+
+GCC_MULTIARCH = i386-linux-gnu i486-linux-gnu i586-linux-gnu i686-linux-gnu 
+
+PlatformType_ARG = -m32 
+
+
+
+; -------------------------------------------------------------
+!LinuxI64
+
+GCC_MULTIARCH = x86_64-linux-gnu 
+
+PlatformType_ARG = -m64 
+
+
+
+; -------------------------------------------------------------
+
+

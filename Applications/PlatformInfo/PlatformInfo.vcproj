@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="Windows-1252" ?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="PlatformInfo" ProjectGUID="{9B5540C5-C410-4CBD-84CC-B928553F91C9}" RootNamespace="PlatformInfo" Keyword="Win32Proj" TargetFrameworkVersion="196613">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<ToolFiles/>
+	<Configurations>
+		<Configuration Name="Debug|Win32" OutputDirectory="Win32_Debug" IntermediateDirectory="Win32_Debug" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="..\..\Output\Include" PreprocessorDefinitions="CEXTEND_DEBUG;WIN32;_CONSOLE;_DEBUG" MinimalRebuild="false" BasicRuntimeChecks="3" RuntimeLibrary="1" UsePrecompiledHeader="2" PrecompiledHeaderThrough="precomp.h" PrecompiledHeaderFile="Win32_Debug/PlatformInfo_Win32_d.pch" WarningLevel="3" DebugInformationFormat="3" ProgramDataBaseFileName="Win32_Debug/PlatformInfo_Win32_d.pdb"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" LinkIncremental="1" GenerateDebugInformation="true" SubSystem="1" TargetMachine="1" OutputFile="Win32_Debug\PlatformInfo_Win32_d.exe"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" OutputDirectory="Win64_Debug" IntermediateDirectory="Win64_Debug" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool" TargetEnvironment="3"/>
+			<Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="..\..\Output\Include" PreprocessorDefinitions="CEXTEND_DEBUG;WIN32;_CONSOLE;_DEBUG" MinimalRebuild="false" BasicRuntimeChecks="3" RuntimeLibrary="1" UsePrecompiledHeader="2" PrecompiledHeaderThrough="precomp.h" PrecompiledHeaderFile="Win64_Debug/PlatformInfo_Win64_d.pch" WarningLevel="3" DebugInformationFormat="3" ProgramDataBaseFileName="Win64_Debug/PlatformInfo_Win64_d.pdb"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" LinkIncremental="1" GenerateDebugInformation="true" SubSystem="1" TargetMachine="17" OutputFile="Win64_Debug\PlatformInfo_Win64_d.exe"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" OutputDirectory="Win32_Release" IntermediateDirectory="Win32_Release" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" AdditionalIncludeDirectories="..\..\Output\Include" PreprocessorDefinitions="CEXTEND_RELEASE;NDEBUG;WIN32;_CONSOLE;_RELEASE" MinimalRebuild="false" RuntimeLibrary="0" EnableFunctionLevelLinking="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="precomp.h" PrecompiledHeaderFile="Win32_Release/PlatformInfo_Win32.pch" WarningLevel="3" DebugInformationFormat="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" LinkIncremental="1" GenerateDebugInformation="false" SubSystem="1" OptimizeReferences="2" EnableCOMDATFolding="2" TargetMachine="1" OutputFile="Win32_Release\PlatformInfo_Win32.exe"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+		<Configuration Name="Release|x64" OutputDirectory="Win64_Release" IntermediateDirectory="Win64_Release" CharacterSet="1" WholeProgramOptimization="0" EnableManagedIncrementalBuild="0" ConfigurationType="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool" TargetEnvironment="3"/>
+			<Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" AdditionalIncludeDirectories="..\..\Output\Include" PreprocessorDefinitions="CEXTEND_RELEASE;NDEBUG;WIN32;_CONSOLE;_RELEASE" MinimalRebuild="false" RuntimeLibrary="0" EnableFunctionLevelLinking="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="precomp.h" PrecompiledHeaderFile="Win64_Release/PlatformInfo_Win64.pch" WarningLevel="3" DebugInformationFormat="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" LinkIncremental="1" GenerateDebugInformation="false" SubSystem="1" OptimizeReferences="2" EnableCOMDATFolding="2" TargetMachine="17" OutputFile="Win64_Release\PlatformInfo_Win64.exe"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="Update.bat"/>
+		</Configuration>
+	</Configurations>
+	<References/>
+	<Files>
+		<Filter Name="Source Files" Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File RelativePath=".\FloatEx.cpp"/>
+			<File RelativePath=".\IntEx.cpp"/>
+			<File RelativePath="main.cpp"/>
+			<File RelativePath="PlatformInfoVersion.cpp"/>
+			<File RelativePath="precomp.cpp">
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|x64">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release|x64">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter Name="Header Files" Filter="h;hpp;hxx;hm;inl;inc;xsd" UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File RelativePath=".\FloatEx.h"/>
+			<File RelativePath=".\IntEx.h"/>
+			<File RelativePath=".\PlatformInfoVersion.h"/>
+			<File RelativePath=".\precomp.h"/>
+			<File RelativePath=".\resource.h"/>
+		</Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav" UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File RelativePath=".\PlatformInfo.rc"/>
+		</Filter>
+		<Filter Name="Misc">
+			<File RelativePath=".\CT_ProjectConfig.ini"/>
+			<File RelativePath=".\CT_ProjectConfig.MakeCfg"/>
+			<File RelativePath=".\DoBuild.sh"/>
+			<File RelativePath=".\DoReconfig.sh"/>
+			<File RelativePath=".\DoTest.sh"/>
+		</Filter>
+		<Filter Name="Autoset_BuildLogs">
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Win32.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Win32.Release.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Win64.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Win64.Release.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Generic.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.Generic.Release.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxARM.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxARM.Release.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxI32.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxI32.Release.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxI64.Debug.log"/>
+			<File RelativePath="..\..\Output\BuildLogs\CExtend_Applications_PlatformInfo.LinuxI64.Release.log"/>
+		</Filter>
+		<Filter Name="Autoset_Libraries">
+			<Filter Name="Libs_Win32_Debug">
+				<File RelativePath="..\..\Output\Libs\Win32_Debug\CExBase_Win32_d.lib">
+					<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Release|x64" ExcludedFromBuild="true"/>
+				</File>
+			</Filter>
+			<Filter Name="Libs_Win32_Release">
+				<File RelativePath="..\..\Output\Libs\Win32_Release\CExBase_Win32.lib">
+					<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Release|x64" ExcludedFromBuild="true"/>
+				</File>
+			</Filter>
+			<Filter Name="Libs_Win64_Debug">
+				<File RelativePath="..\..\Output\Libs\Win64_Debug\CExBase_Win64_d.lib">
+					<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Release|x64" ExcludedFromBuild="true"/>
+				</File>
+			</Filter>
+			<Filter Name="Libs_Win64_Release">
+				<File RelativePath="..\..\Output\Libs\Win64_Release\CExBase_Win64.lib">
+					<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true"/>
+					<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+				</File>
+			</Filter>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>

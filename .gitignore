@@ -1,0 +1,12 @@
+Win32_Debug
+Win32_Release
+Win64_Debug
+Win64_Release
+LinuxI64_Debug
+LinuxI64_Release
+Generic_Debug
+Generic_Release
+LinuxARM_Debug
+LinuxARM_Release
+Output
+

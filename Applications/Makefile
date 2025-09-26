@@ -1,7 +1,7 @@
 #############################################################################
 ###
 ###     Filename: CExtend/Applications/Makefile
-###    Generated: 2025\09\25-17:48:02 EST
+###    Generated: 2025\09\26-13:03:09 EST
 ###
 #############################################################################
 ###
@@ -74,13 +74,13 @@ help:
 ### Build
 ###
 
-build: __build_message 
+build: __build_message __build_subdir_PlatformInfo 
 	-@
 
-build_Debug: __build_message_Debug 
+build_Debug: __build_message_Debug __build_subdir_PlatformInfo_Debug 
 	-@
 
-build_Release: __build_message_Release 
+build_Release: __build_message_Release __build_subdir_PlatformInfo_Release 
 	-@
 
 __build_message: 
@@ -91,6 +91,26 @@ __build_message_Debug:
 
 __build_message_Release: 
 	-@ CT_Printf -fc "#" "Building == CExtend - Applications - [Release]" 
+
+
+#############################################################################
+### Build - Subdir - PlatformInfo
+###
+
+__build_subdir_PlatformInfo: 
+	-@if [ ! -d "PlatformInfo" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cPlatformInfo#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "PlatformInfo/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cPlatformInfo/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "PlatformInfo"  -f Makefile  build
+
+__build_subdir_PlatformInfo_Debug: 
+	-@if [ ! -d "PlatformInfo" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cPlatformInfo#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "PlatformInfo/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cPlatformInfo/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "PlatformInfo"  -f Makefile  build_Debug
+
+__build_subdir_PlatformInfo_Release: 
+	-@if [ ! -d "PlatformInfo" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cPlatformInfo#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "PlatformInfo/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cPlatformInfo/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "PlatformInfo"  -f Makefile  build_Release
 
 
 #############################################################################
@@ -165,11 +185,16 @@ build_LinuxI64_Release:
 ### Clean
 ###
 
-clean: __clean_message 
+clean: __clean_message __clean_subdir_PlatformInfo 
 	-@
 
 __clean_message: 
 	-@ CT_Printf -fc "#" "Cleaning == CExtend - Applications" 
+
+__clean_subdir_PlatformInfo: 
+	-@if [ ! -d "PlatformInfo" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cPlatformInfo#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "PlatformInfo/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cPlatformInfo/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "PlatformInfo"  -f Makefile  clean
 
 clean_Generic: 
 	-@if [ ! -f "Makefile-Generic" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cMakefile-Generic#c" 34 34 ; false ; fi ; 

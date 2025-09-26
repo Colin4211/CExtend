@@ -28,7 +28,7 @@ long_line_behaviour=1
 long_line_column=78
 
 [files]
-current_page=0
+current_page=24
 FILE_NAME_0=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase.cpp;0;4
 FILE_NAME_1=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase.h;0;4
 FILE_NAME_2=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_DequeTypes.h;0;4
@@ -45,11 +45,11 @@ FILE_NAME_12=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExten
 FILE_NAME_13=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_FloatClass.cpp;0;4
 FILE_NAME_14=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_FloatClass.h;0;4
 FILE_NAME_15=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Floats.h;0;4
-FILE_NAME_16=3208;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_GetLibraryVersionInfo.cpp;0;4
-FILE_NAME_17=1112;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_GetLibraryVersionInfo.h;0;4
+FILE_NAME_16=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_GetLibraryVersionInfo.cpp;0;4
+FILE_NAME_17=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_GetLibraryVersionInfo.h;0;4
 FILE_NAME_18=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Integers.cpp;0;4
 FILE_NAME_19=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Integers.h;0;4
-FILE_NAME_20=1000;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Linux.h;0;4
+FILE_NAME_20=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Linux.h;0;4
 FILE_NAME_21=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_ListTypes.h;0;4
 FILE_NAME_22=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_MSWindows.h;0;4
 FILE_NAME_23=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_Platform.h;0;4
@@ -57,8 +57,8 @@ FILE_NAME_24=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExten
 FILE_NAME_25=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_StdC.h;0;4
 FILE_NAME_26=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_StdCPP.h;0;4
 FILE_NAME_27=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_VectorTypes.h;0;4
-FILE_NAME_28=1779;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_VersionInfo.h;0;4
-FILE_NAME_29=1256;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_VersionNumber.h;0;4
+FILE_NAME_28=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_VersionInfo.h;0;4
+FILE_NAME_29=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_VersionNumber.h;0;4
 FILE_NAME_30=0;Conf;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCT_ProjectConfig.MakeCfg;0;4
 FILE_NAME_31=0;Conf;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCT_ProjectConfig.ini;0;4
 FILE_NAME_32=0;Sh;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FDoBuild.sh;0;4
@@ -66,7 +66,7 @@ FILE_NAME_33=0;Sh;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend
 FILE_NAME_34=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FPrivate_CExBase_VersionStruct.cpp;0;4
 FILE_NAME_35=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FPrivate_CExBase_VersionStruct.h;0;4
 FILE_NAME_36=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Debug.log;0;4
-FILE_NAME_37=1821;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Release.log;0;4
+FILE_NAME_37=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Release.log;0;4
 
 [VTE]
-last_dir=/Mount/Development/NextGen/CExtend/Libraries/CExBase
+last_dir=/Mount/Development/NextGen/CExtendDex/Apps/DevUtil

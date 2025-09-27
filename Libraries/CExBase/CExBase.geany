@@ -28,7 +28,7 @@ long_line_behaviour=1
 long_line_column=78
 
 [files]
-current_page=24
+current_page=0
 FILE_NAME_0=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase.cpp;0;4
 FILE_NAME_1=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase.h;0;4
 FILE_NAME_2=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FCExBase_DequeTypes.h;0;4
@@ -65,8 +65,20 @@ FILE_NAME_32=0;Sh;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend
 FILE_NAME_33=0;Sh;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FDoReconfig.sh;0;4
 FILE_NAME_34=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FPrivate_CExBase_VersionStruct.cpp;0;4
 FILE_NAME_35=0;C++;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FLibraries%2FCExBase%2FPrivate_CExBase_VersionStruct.h;0;4
-FILE_NAME_36=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Debug.log;0;4
-FILE_NAME_37=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Release.log;0;4
+FILE_NAME_36=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Generic.Debug.log;0;4
+FILE_NAME_37=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Generic.Release.log;0;4
+FILE_NAME_38=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxARM.Debug.log;0;4
+FILE_NAME_39=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxARM.Release.log;0;4
+FILE_NAME_40=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI32.Debug.log;0;4
+FILE_NAME_41=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI32.Release.log;0;4
+FILE_NAME_42=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Debug.log;0;4
+FILE_NAME_43=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.LinuxI64.Release.log;0;4
+FILE_NAME_44=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Win32.Debug.log;0;4
+FILE_NAME_45=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Win32.Release.log;0;4
+FILE_NAME_46=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Win64.Debug.log;0;4
+FILE_NAME_47=0;None;0;EISO-8859-1;0;1;0;%2FMount%2FDevelopment%2FNextGen%2FCExtend%2FOutput%2FBuildLogs%2FCExtend_Libraries_CExBase.Win64.Release.log;0;4
 
 [VTE]
-last_dir=/Mount/Development/NextGen/CExtendDex/Apps/DevUtil
+last_dir=/Mount/Development/NextGen/CExtend/Libraries/CExBase
+
+

@@ -1,7 +1,7 @@
 #############################################################################
 ###
 ###     Filename: CExtend/Libraries/Makefile
-###    Generated: 2025\09\26-18:22:41 EST
+###    Generated: 2025\09\26-19:54:13 EST
 ###
 #############################################################################
 ###
@@ -74,13 +74,15 @@ help:
 ### Build
 ###
 
-build: __build_message __build_subdir_CExBase __build_subdir_CExOutput 
+build: __build_message __build_subdir_CExBase __build_subdir_CExOutput __build_subdir_CExThreading 
 	-@
 
-build_Debug: __build_message_Debug __build_subdir_CExBase_Debug __build_subdir_CExOutput_Debug 
+build_Debug: __build_message_Debug __build_subdir_CExBase_Debug __build_subdir_CExOutput_Debug \
+		__build_subdir_CExThreading_Debug 
 	-@
 
-build_Release: __build_message_Release __build_subdir_CExBase_Release __build_subdir_CExOutput_Release 
+build_Release: __build_message_Release __build_subdir_CExBase_Release __build_subdir_CExOutput_Release \
+		__build_subdir_CExThreading_Release 
 	-@
 
 __build_message: 
@@ -131,6 +133,26 @@ __build_subdir_CExOutput_Release:
 	-@if [ ! -d "CExOutput" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExOutput#c" 34 34 ; false ; fi ; 
 	-@if [ ! -f "CExOutput/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExOutput/Makefile#c" 34 34 ; false ; fi ; 
 	-@ $(MAKE) $(MAKEOPTIONS) -C "CExOutput"  -f Makefile  build_Release
+
+
+#############################################################################
+### Build - Subdir - CExThreading
+###
+
+__build_subdir_CExThreading: 
+	-@if [ ! -d "CExThreading" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExThreading#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "CExThreading/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExThreading/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "CExThreading"  -f Makefile  build
+
+__build_subdir_CExThreading_Debug: 
+	-@if [ ! -d "CExThreading" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExThreading#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "CExThreading/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExThreading/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "CExThreading"  -f Makefile  build_Debug
+
+__build_subdir_CExThreading_Release: 
+	-@if [ ! -d "CExThreading" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExThreading#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "CExThreading/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExThreading/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "CExThreading"  -f Makefile  build_Release
 
 
 #############################################################################
@@ -205,7 +227,7 @@ build_LinuxI64_Release:
 ### Clean
 ###
 
-clean: __clean_message __clean_subdir_CExBase __clean_subdir_CExOutput 
+clean: __clean_message __clean_subdir_CExBase __clean_subdir_CExOutput __clean_subdir_CExThreading 
 	-@
 
 __clean_message: 
@@ -220,6 +242,11 @@ __clean_subdir_CExOutput:
 	-@if [ ! -d "CExOutput" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExOutput#c" 34 34 ; false ; fi ; 
 	-@if [ ! -f "CExOutput/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExOutput/Makefile#c" 34 34 ; false ; fi ; 
 	-@ $(MAKE) $(MAKEOPTIONS) -C "CExOutput"  -f Makefile  clean
+
+__clean_subdir_CExThreading: 
+	-@if [ ! -d "CExThreading" ] ; then CT_Printf -fc "#" "ERROR: Missing dir -- #cCExThreading#c" 34 34 ; false ; fi ; 
+	-@if [ ! -f "CExThreading/Makefile" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cCExThreading/Makefile#c" 34 34 ; false ; fi ; 
+	-@ $(MAKE) $(MAKEOPTIONS) -C "CExThreading"  -f Makefile  clean
 
 clean_Generic: 
 	-@if [ ! -f "Makefile-Generic" ] ; then CT_Printf -fc "#" "ERROR: Missing file -- #cMakefile-Generic#c" 34 34 ; false ; fi ; 

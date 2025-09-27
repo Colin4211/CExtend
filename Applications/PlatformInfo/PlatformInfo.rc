@@ -65,8 +65,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION          4 ,     99 ,     99 ,      1
- PRODUCTVERSION       4 ,     99 ,     99 ,      1
+ FILEVERSION          4 ,     99 ,     99 ,      2
+ PRODUCTVERSION       4 ,     99 ,     99 ,      2
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x29L
@@ -81,18 +81,18 @@ BEGIN
     BEGIN
         BLOCK "100904b0"
         BEGIN
-            VALUE "Comments",                        "2025/09/26-18:59:07 utc -- 2025/09/26-14:59:07 local\0" 
+            VALUE "Comments",                        "2025/09/26-23:54:04 utc -- 2025/09/26-19:54:04 local\0" 
             VALUE "CompanyName",                     "Colin Goodall\0" 
             VALUE "FileDescription",                 "PlatformInfo.exe\0" 
-            VALUE "FileVersion",                     "v4.99.99.1\0" 
+            VALUE "FileVersion",                     "v4.99.99.2\0" 
             VALUE "InternalName",                    "PlatformInfo.exe\0" 
             VALUE "LegalCopyright",                  "Copyright (c) 1995-2010, Colin Goodall, All Rights Reserved.\0" 
             VALUE "LegalTrademarks",                 "Copyright (c) 1995-2010, Colin Goodall, All Rights Reserved.\0" 
             VALUE "OriginalFilename",                "PlatformInfo.exe\0" 
-            VALUE "PrivateBuild",                    "Product=4.99.99.1, File=4.99.99.1\0" 
+            VALUE "PrivateBuild",                    "Product=4.99.99.2, File=4.99.99.2\0" 
             VALUE "ProductName",                     "PlatformInfo\0" 
-            VALUE "ProductVersion",                  "CExtend-v4.99.99.1\0" 
-            VALUE "SpecialBuild",                    "Product=CExtend-v4.99.99.1, File=v4.99.99.1\0" 
+            VALUE "ProductVersion",                  "CExtendDev-v4.99.99.2\0" 
+            VALUE "SpecialBuild",                    "Product=CExtendDev-v4.99.99.2, File=v4.99.99.2\0" 
         END
     END
     BLOCK "VarFileInfo"
